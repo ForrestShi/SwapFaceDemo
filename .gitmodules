@@ -1,0 +1,3 @@
+[submodule "3rdparty/imagepicker"]
+	path = 3rdparty/imagepicker
+	url = https://github.com/elc/ELCImagePickerController.git

@@ -7,17 +7,31 @@
 //
 
 #import "ViewController.h"
+#import "MOGlassButton.h"
+
+#define BUTTON_WIDTH  300
+#define BUTTON_HEIGHT 60
 
 @interface ViewController ()
 
 @end
+
+
 
 @implementation ViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    MOGlassButton* choosePhotoButton = [[MOGlassButton alloc] 
+                                        initWithFrame:CGRectMake(self.view.bounds.size.width/2 - BUTTON_WIDTH/2 , 
+                                                                 self.view.bounds.size.height - BUTTON_HEIGHT *1.5 , BUTTON_WIDTH, BUTTON_HEIGHT)];
+	[choosePhotoButton setupAsGreenButton];
+	[choosePhotoButton setTitle:@"Choose Photo" forState:UIControlStateNormal];
+	[self.view addSubview:choosePhotoButton ];
 }
 
 - (void)viewDidUnload

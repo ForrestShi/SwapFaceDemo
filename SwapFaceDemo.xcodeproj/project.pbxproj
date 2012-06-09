@@ -14,8 +14,9 @@
 		18F4D5CD15834944000E21DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F4D5CC15834944000E21DC /* main.m */; };
 		18F4D5D115834944000E21DC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F4D5D015834944000E21DC /* AppDelegate.m */; };
 		18F4D5D415834944000E21DC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F4D5D315834944000E21DC /* ViewController.m */; };
-		18F4D5D715834944000E21DC /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F4D5D515834944000E21DC /* ViewController_iPhone.xib */; };
-		18F4D5DA15834944000E21DC /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18F4D5D815834944000E21DC /* ViewController_iPad.xib */; };
+		18F4D5E415834B31000E21DC /* MOButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F4D5E115834B31000E21DC /* MOButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F4D5E515834B31000E21DC /* MOGlassButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F4D5E315834B31000E21DC /* MOGlassButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		18F4D5E715834B8B000E21DC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F4D5E615834B8B000E21DC /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,19 @@
 		18F4D5C015834944000E21DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		18F4D5C215834944000E21DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18F4D5C415834944000E21DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		18F4D5C815834944000E21DC /* SwapFaceDemo-Info.plist */ = {isa = PBXFileReference; path = "SwapFaceDemo-Info.plist"; sourceTree = "<group>"; };
+		18F4D5C815834944000E21DC /* SwapFaceDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwapFaceDemo-Info.plist"; sourceTree = "<group>"; };
 		18F4D5CA15834944000E21DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18F4D5CC15834944000E21DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		18F4D5CE15834944000E21DC /* SwapFaceDemo-Prefix.pch */ = {isa = PBXFileReference; path = "SwapFaceDemo-Prefix.pch"; sourceTree = "<group>"; };
-		18F4D5CF15834944000E21DC /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		18F4D5CE15834944000E21DC /* SwapFaceDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwapFaceDemo-Prefix.pch"; sourceTree = "<group>"; };
+		18F4D5CF15834944000E21DC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18F4D5D015834944000E21DC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		18F4D5D215834944000E21DC /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		18F4D5D215834944000E21DC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		18F4D5D315834944000E21DC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		18F4D5D615834944000E21DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		18F4D5D915834944000E21DC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		18F4D5E015834B31000E21DC /* MOButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOButton.h; sourceTree = "<group>"; };
+		18F4D5E115834B31000E21DC /* MOButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOButton.m; sourceTree = "<group>"; };
+		18F4D5E215834B31000E21DC /* MOGlassButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOGlassButton.h; sourceTree = "<group>"; };
+		18F4D5E315834B31000E21DC /* MOGlassButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOGlassButton.m; sourceTree = "<group>"; };
+		18F4D5E615834B8B000E21DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F4D5E715834B8B000E21DC /* QuartzCore.framework in Frameworks */,
 				18F4D5C115834944000E21DC /* UIKit.framework in Frameworks */,
 				18F4D5C315834944000E21DC /* Foundation.framework in Frameworks */,
 				18F4D5C515834944000E21DC /* CoreGraphics.framework in Frameworks */,
@@ -52,6 +57,7 @@
 		18F4D5B115834944000E21DC = {
 			isa = PBXGroup;
 			children = (
+				18F4D5E815834C47000E21DC /* 3rdParty */,
 				18F4D5C615834944000E21DC /* SwapFaceDemo */,
 				18F4D5BF15834944000E21DC /* Frameworks */,
 				18F4D5BD15834944000E21DC /* Products */,
@@ -69,6 +75,7 @@
 		18F4D5BF15834944000E21DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18F4D5E615834B8B000E21DC /* QuartzCore.framework */,
 				18F4D5C015834944000E21DC /* UIKit.framework */,
 				18F4D5C215834944000E21DC /* Foundation.framework */,
 				18F4D5C415834944000E21DC /* CoreGraphics.framework */,
@@ -83,8 +90,6 @@
 				18F4D5D015834944000E21DC /* AppDelegate.m */,
 				18F4D5D215834944000E21DC /* ViewController.h */,
 				18F4D5D315834944000E21DC /* ViewController.m */,
-				18F4D5D515834944000E21DC /* ViewController_iPhone.xib */,
-				18F4D5D815834944000E21DC /* ViewController_iPad.xib */,
 				18F4D5C715834944000E21DC /* Supporting Files */,
 			);
 			path = SwapFaceDemo;
@@ -99,6 +104,25 @@
 				18F4D5CE15834944000E21DC /* SwapFaceDemo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18F4D5E815834C47000E21DC /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				18F4D5E915834C55000E21DC /* Buttons */,
+			);
+			name = 3rdParty;
+			sourceTree = "<group>";
+		};
+		18F4D5E915834C55000E21DC /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				18F4D5E015834B31000E21DC /* MOButton.h */,
+				18F4D5E115834B31000E21DC /* MOButton.m */,
+				18F4D5E215834B31000E21DC /* MOGlassButton.h */,
+				18F4D5E315834B31000E21DC /* MOGlassButton.m */,
+			);
+			name = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +176,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F4D5CB15834944000E21DC /* InfoPlist.strings in Resources */,
-				18F4D5D715834944000E21DC /* ViewController_iPhone.xib in Resources */,
-				18F4D5DA15834944000E21DC /* ViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +189,8 @@
 				18F4D5CD15834944000E21DC /* main.m in Sources */,
 				18F4D5D115834944000E21DC /* AppDelegate.m in Sources */,
 				18F4D5D415834944000E21DC /* ViewController.m in Sources */,
+				18F4D5E415834B31000E21DC /* MOButton.m in Sources */,
+				18F4D5E515834B31000E21DC /* MOGlassButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,22 +203,6 @@
 				18F4D5CA15834944000E21DC /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		18F4D5D515834944000E21DC /* ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18F4D5D615834944000E21DC /* en */,
-			);
-			name = ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		18F4D5D815834944000E21DC /* ViewController_iPad.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18F4D5D915834944000E21DC /* en */,
-			);
-			name = ViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
